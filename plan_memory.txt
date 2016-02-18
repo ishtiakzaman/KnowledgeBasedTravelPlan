@@ -1,0 +1,27 @@
+[
+([
+	(['loc={\'me\':\'restaurant\'}','cash={\'me\':8}']),
+	(['loc={\'me\':\'home\'}','cash={\'me\':20}','owe={\'me\':0}'])
+],
+[
+	('call_taxi','me','home'),
+	('ride_taxi','me','home','restaurant'),
+	('pay_driver', 'me')
+]),
+([
+	(['loc={\'me\':\'park\'}','cash={\'me\':20}']),
+	(['loc={\'me\':\'home\'}','cash={\'me\':20}','owe={\'me\':0}'])
+],
+[
+	('walk','me','home','park')
+]),
+([
+	(['loc={\'me\':\'market\'}','cash={\'me\':16}']),
+	(['loc={\'me\':\'home\'}','cash={\'me\':20}','owe={\'me\':0}'])
+],
+[
+	('walk','me','home','bus_stop'),	
+	('pay_bus_driver', 'me'),
+	('ride_bus','me','bus_stop','market')
+])
+]

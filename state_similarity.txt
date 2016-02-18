@@ -1,0 +1,11 @@
+(
+{'threshold':20},
+[
+'loc:30',
+'cash:8',
+'time:50'
+],
+['similarity={\'home\':{\'park\':0.5},\'home\':{\'restaurant\':0.3},\'restaurant\':{\'park\':0.2},\
+\'home\':{\'market\':0.5},\'market\':{\'restaurant\':0.9},\'market\':{\'park\':0.4},\'London\':{\'Paris\':0.4},\'IU Campus\':{\'IMU\':0.94}}']
+)
+		

@@ -1,0 +1,234 @@
+[
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_3\'}',
+			'balance_bank={\'me\': 32.44}',
+			'cash={\'me\': 15.94}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}',
+			'time={\'me\': 9.76}',
+			'target=\'me\''
+		]),
+		([
+			'target=\'me\'',
+			'cash={\'me\': 0.88}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'market'),
+		('pay_cab_driver', 'me', 3.85)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_1\'}',
+			'balance_bank={\'me\': 73.8}',
+			'cash={\'me\': 7.65}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}',
+			'time={\'me\': 9.33}',
+			'target=\'me\''
+		]),
+		([
+			'target=\'me\'',
+			'cash={\'me\': 17.05}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'bank'),
+		('pay_cab_driver', 'me', 2.69),
+		('withdraw_money', 'me', 16.730000000000004),
+		('walk', 'me', 'bank', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_2\'}',
+			'balance_bank={\'me\': 31.88}',
+			'cash={\'me\': 10.02}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}',
+			'time={\'me\': 57.93}',
+			'target=\'me\''
+		]),
+		([
+			'target=\'me\'',
+			'cash={\'me\': 15.26}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'bank'),
+		('pay_cab_driver', 'me', 2.69),
+		('withdraw_money', 'me', 12.57),
+		('walk', 'me', 'bank', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_2\'}',
+			'balance_bank={\'me\': 5.12}',
+			'cash={\'me\': 19.72}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}',
+			'time={\'me\': 91.96}',
+			'target=\'me\''
+		]),
+		([
+			'target=\'me\'',
+			'cash={\'me\': 10.55}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'park'),
+		('pay_cab_driver', 'me', 3.42)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_3\'}',
+			'balance_bank={\'me\': 25.62}',
+			'cash={\'me\': 15.22}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}',
+			'time={\'me\': 54.73}',
+			'target=\'me\''
+		]),
+		([
+			'target=\'me\'',
+			'cash={\'me\': 4.74}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'market'),
+		('pay_cab_driver', 'me', 3.85)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'balance_bank={\'me\': 69.86}',
+			'cash={\'me\': 4.39}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}',
+			'time={\'me\': 78.28}',
+			'target=\'me\''
+		]),
+		([
+			'target=\'me\'',
+			'cash={\'me\': 5.85}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('walk', 'me', 'park', 'bank'),
+		('withdraw_money', 'me', 11.32),
+		('call_taxi', 'me', 'bank'),
+		('ride_taxi', 'me', 'bank', 'market'),
+		('pay_cab_driver', 'me', 6.86)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_3\'}',
+			'balance_bank={\'me\': 69.26}',
+			'cash={\'me\': 11.45}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}',
+			'time={\'me\': 60.29}',
+			'target=\'me\''
+		]),
+		([
+			'target=\'me\'',
+			'cash={\'me\': 14.74}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'bank'),
+		('pay_cab_driver', 'me', 2.69),
+		('withdraw_money', 'me', 10.620000000000001),
+		('walk', 'me', 'bank', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'balance_bank={\'me\': 256.0}',
+			'cash={\'me\': 15.95}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}',
+			'time={\'me\': 82.52}',
+			'target=\'me\''
+		]),
+		([
+			'target=\'me\'',
+			'cash={\'me\': 16.57}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('walk', 'me', 'park', 'bank'),
+		('withdraw_money', 'me', 10.48),
+		('call_taxi', 'me', 'bank'),
+		('ride_taxi', 'me', 'bank', 'market'),
+		('pay_cab_driver', 'me', 6.86)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'balance_bank={\'me\': 9.52}',
+			'cash={\'me\': 12.95}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}',
+			'time={\'me\': 27.19}',
+			'target=\'me\''
+		]),
+		([
+			'target=\'me\'',
+			'cash={\'me\': 7.19}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'home'),
+		('pay_cab_driver', 'me', 3.42)
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_2\'}',
+			'balance_bank={\'me\': 118.31}',
+			'cash={\'me\': 15.63}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}',
+			'time={\'me\': 37.77}',
+			'target=\'me\''
+		]),
+		([
+			'target=\'me\'',
+			'cash={\'me\': 3.68}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'restaurant'),
+		('ride_taxi', 'me', 'restaurant', 'park'),
+		('pay_cab_driver', 'me', 3.37)
+	]),
+	([
+		([
+			'loc={\'me\': \'IMU\', \'bus\': \'bus_stop_3\'}',
+			'balance_bank={\'me\': 4046.68}',
+			'cash={\'me\': 2890.29}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}',
+			'time={\'me\': 2037.3}',
+			'target=\'me\''
+		]),
+		([
+			'target=\'me\'',
+			'cash={\'me\': 415.0}',
+			'loc={\'me\': \'London\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'IMU'),
+		('ride_taxi', 'me', 'IMU', 'Chicago'),
+		('pay_cab_driver', 'me', 115.88),
+		('fly', 'me', 'Chicago', 'London'),
+		('pay_air_fare', 'me', 1134.53)
+	])
+]

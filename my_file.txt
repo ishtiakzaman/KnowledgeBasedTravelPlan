@@ -1,0 +1,1840 @@
+[
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 10.65}, \'bus_stop_3\': {}, \'bus_stop_1\': {\'bus_stop_3\': 13.36, \'market\': 5.75}, \'restaurant\': {\'park\': 7.41}, \'park\': {\'bus_stop_1\': 10.81}, \'home\': {\'park\': 11.64, \'market\': 9.93}, \'market\': {\'bus_stop_1\': 1.23, \'park\': 3.95, \'restaurant\': 3.9}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_1:bus_stop_1\', \'bus_stop_1:bus_stop_2\', \'bus_stop_2:bus_stop_1\', \'bus_stop_2:bus_stop_2\']',
+			'cash={\'me\': 5.54}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 1.77}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'market', 'bus_stop_1'),
+		('pay_bus_driver', 'me', 2.0),
+		('ride_bus', 'me', 'bus_stop_1', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 14.15}, \'bus_stop_3\': {\'home\': 13.47, \'bus_stop_2\': 13.71, \'market\': 9.25}, \'bus_stop_1\': {\'bus_stop_2\': 11.15, \'park\': 7.23}, \'restaurant\': {\'home\': 3.5, \'park\': 9.63, \'bus_stop_1\': 4.62}, \'park\': {\'home\': 14.93, \'bus_stop_1\': 0.05, \'bus_stop_2\': 0.07, \'restaurant\': 8.35}, \'home\': {\'bus_stop_2\': 2.47, \'park\': 7.59, \'bus_stop_3\': 10.17, \'market\': 13.21}, \'market\': {\'park\': 9.68}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_1\', \'bus_stop_2:bus_stop_3\']',
+			'cash={\'me\': 9.45}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 1.34}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'restaurant'),
+		('pay_cab_driver', 'me', 5.67)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'home\': 8.73, \'bus_stop_1\': 8.48, \'restaurant\': 1.59}, \'bus_stop_3\': {\'bus_stop_2\': 8.59, \'market\': 0.92}, \'bus_stop_1\': {\'bus_stop_2\': 4.48}, \'restaurant\': {\'park\': 7.24}, \'park\': {\'home\': 12.76, \'bus_stop_1\': 0.41, \'bus_stop_3\': 8.8, \'restaurant\': 0.3}, \'home\': {\'bus_stop_2\': 11.44}, \'market\': {\'bus_stop_2\': 1.58, \'restaurant\': 7.35}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:market\', \'bus_stop_1:bus_stop_2\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 2.61}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 12.37}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'park', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'restaurant\': 6.76}, \'bus_stop_3\': {\'home\': 5.55}, \'bus_stop_1\': {}, \'restaurant\': {}, \'park\': {\'bus_stop_1\': 11.87}, \'home\': {\'restaurant\': 0.24}, \'market\': {\'home\': 7.57, \'park\': 1.23, \'bus_stop_1\': 0.24}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:bus_stop_1\', \'bus_stop_1:bus_stop_2\', \'bus_stop_2:restaurant\', \'bus_stop_2:market\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:restaurant\']',
+			'cash={\'me\': 19.46}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 13.25}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'home'),
+		('pay_cab_driver', 'me', 5.29)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {\'park\': 3.89}, \'bus_stop_1\': {\'market\': 5.97}, \'restaurant\': {}, \'park\': {\'bus_stop_1\': 0.27, \'restaurant\': 2.74}, \'home\': {\'park\': 4.5, \'bus_stop_3\': 7.73, \'restaurant\': 3.63}, \'market\': {\'bus_stop_3\': 14.62, \'bus_stop_1\': 4.92}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_1\', \'bus_stop_2:park\', \'bus_stop_3:home\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 17.94}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 2.23}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'restaurant'),
+		('pay_cab_driver', 'me', 2.87)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'market\': 6.71, \'bus_stop_1\': 12.38}, \'bus_stop_3\': {\'restaurant\': 11.02}, \'bus_stop_1\': {\'bus_stop_3\': 9.79}, \'restaurant\': {\'bus_stop_2\': 2.68}, \'park\': {\'bus_stop_2\': 8.8, \'bus_stop_3\': 0.5, \'market\': 3.17, \'bus_stop_1\': 6.76}, \'home\': {\'bus_stop_3\': 10.1, \'bus_stop_1\': 2.57}, \'market\': {\'home\': 5.89, \'bus_stop_3\': 2.21}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_2\', \'bus_stop_2:home\', \'bus_stop_2:park\', \'bus_stop_3:market\']',
+			'cash={\'me\': 19.81}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 5.93}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'market'),
+		('pay_cab_driver', 'me', 3.08)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 2.54}, \'bus_stop_3\': {\'park\': 7.86, \'market\': 7.53}, \'bus_stop_1\': {\'market\': 9.09, \'restaurant\': 1.24}, \'restaurant\': {\'park\': 3.43, \'bus_stop_3\': 2.05}, \'park\': {\'home\': 0.01, \'bus_stop_3\': 14.71}, \'home\': {\'bus_stop_3\': 8.2, \'market\': 11.11, \'bus_stop_1\': 0.33}, \'market\': {}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_3\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 14.68}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 5.82}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'market'),
+		('pay_cab_driver', 'me', 7.05)
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 12.97}, \'bus_stop_3\': {\'market\': 14.66, \'restaurant\': 12.31}, \'bus_stop_1\': {\'bus_stop_2\': 9.88, \'bus_stop_3\': 7.84, \'market\': 14.22}, \'restaurant\': {\'home\': 6.02, \'market\': 0.15, \'bus_stop_1\': 1.8}, \'park\': {\'bus_stop_2\': 10.04}, \'home\': {\'bus_stop_2\': 6.68, \'restaurant\': 9.38}, \'market\': {\'home\': 7.73, \'bus_stop_1\': 4.06, \'bus_stop_2\': 8.8, \'restaurant\': 12.41}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_2:park\', \'bus_stop_2:bus_stop_1\', \'bus_stop_2:bus_stop_2\']',
+			'cash={\'me\': 1.64}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 16.66}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('walk', 'me', 'restaurant', 'market')
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'park\': 2.33}, \'bus_stop_3\': {}, \'bus_stop_1\': {\'home\': 8.11, \'bus_stop_2\': 13.92, \'restaurant\': 10.5}, \'restaurant\': {\'home\': 0.78, \'bus_stop_2\': 10.34, \'bus_stop_3\': 0.28}, \'park\': {\'home\': 5.45, \'bus_stop_3\': 11.65, \'restaurant\': 0.73}, \'home\': {\'bus_stop_2\': 0.86, \'bus_stop_1\': 11.1, \'park\': 11.49, \'bus_stop_3\': 2.45, \'restaurant\': 8.0}, \'market\': {\'bus_stop_3\': 1.89, \'restaurant\': 4.16}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 16.93}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 8.63}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'restaurant', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'home\': 0.44, \'park\': 5.27, \'bus_stop_3\': 5.42, \'market\': 4.77, \'restaurant\': 13.78}, \'bus_stop_3\': {\'bus_stop_2\': 10.58, \'bus_stop_1\': 11.47, \'park\': 5.32, \'restaurant\': 4.47}, \'bus_stop_1\': {\'home\': 3.47, \'bus_stop_2\': 4.15, \'bus_stop_3\': 11.47}, \'restaurant\': {\'bus_stop_3\': 13.45, \'bus_stop_1\': 10.33}, \'park\': {\'bus_stop_1\': 9.57}, \'home\': {\'bus_stop_2\': 2.56, \'park\': 6.82, \'market\': 0.36, \'bus_stop_1\': 0.52}, \'market\': {\'home\': 14.94, \'restaurant\': 9.06}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_1\', \'bus_stop_2:home\', \'bus_stop_2:bus_stop_1\', \'bus_stop_3:park\']',
+			'cash={\'me\': 18.52}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 3.41}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'park'),
+		('pay_cab_driver', 'me', 4.91)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'restaurant\': 14.54}, \'bus_stop_3\': {\'home\': 8.76, \'bus_stop_1\': 1.29, \'park\': 4.05, \'restaurant\': 14.96}, \'bus_stop_1\': {\'home\': 11.5}, \'restaurant\': {\'market\': 11.79}, \'park\': {\'restaurant\': 9.28}, \'home\': {\'park\': 11.4, \'bus_stop_3\': 1.79, \'restaurant\': 7.39}, \'market\': {\'restaurant\': 13.48}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:park\', \'bus_stop_2:restaurant\', \'bus_stop_2:bus_stop_1\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 16.2}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 8.65}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'park'),
+		('pay_cab_driver', 'me', 7.2)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'home\': 0.34, \'market\': 9.78, \'restaurant\': 11.21}, \'bus_stop_3\': {\'home\': 10.83, \'park\': 9.48, \'bus_stop_2\': 5.41, \'market\': 14.57}, \'bus_stop_1\': {\'home\': 1.99, \'park\': 2.74}, \'restaurant\': {\'bus_stop_2\': 14.56, \'bus_stop_1\': 14.39}, \'park\': {\'bus_stop_2\': 2.67, \'bus_stop_3\': 1.43, \'restaurant\': 1.67}, \'home\': {\'park\': 12.67, \'bus_stop_3\': 2.23}, \'market\': {\'bus_stop_3\': 0.03, \'restaurant\': 13.59}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_1\', \'bus_stop_2:park\', \'bus_stop_2:restaurant\', \'bus_stop_2:market\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:market\']',
+			'cash={\'me\': 5.39}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 5.44}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'park', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 11.29, \'market\': 12.45, \'restaurant\': 6.58}, \'bus_stop_3\': {\'bus_stop_2\': 0.89}, \'bus_stop_1\': {\'market\': 1.68}, \'restaurant\': {\'home\': 1.34, \'park\': 6.6, \'bus_stop_3\': 1.17, \'bus_stop_1\': 6.78}, \'park\': {\'bus_stop_2\': 0.67}, \'home\': {\'bus_stop_1\': 14.98, \'restaurant\': 13.01}, \'market\': {\'bus_stop_2\': 11.24, \'park\': 8.33}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:home\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:restaurant\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 13.55}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 3.61}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'restaurant', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'restaurant\': 3.1}, \'bus_stop_3\': {}, \'bus_stop_1\': {\'market\': 8.1}, \'restaurant\': {\'park\': 3.09}, \'park\': {\'bus_stop_2\': 11.91, \'bus_stop_3\': 10.28}, \'home\': {\'bus_stop_2\': 13.34, \'bus_stop_3\': 9.85}, \'market\': {\'bus_stop_2\': 1.96, \'restaurant\': 7.99}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_1:park\', \'bus_stop_3:restaurant\', \'bus_stop_3:bus_stop_1\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 16.6}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 3.76}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'restaurant'),
+		('pay_cab_driver', 'me', 5.5)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'market\': 14.34}, \'bus_stop_3\': {\'bus_stop_2\': 9.96, \'bus_stop_1\': 5.23}, \'bus_stop_1\': {\'bus_stop_2\': 10.52}, \'restaurant\': {\'bus_stop_2\': 13.83, \'bus_stop_3\': 3.48, \'bus_stop_1\': 14.73}, \'park\': {}, \'home\': {}, \'market\': {\'bus_stop_2\': 9.11, \'bus_stop_3\': 0.48, \'restaurant\': 10.2}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_2\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:market\', \'bus_stop_3:restaurant\', \'bus_stop_3:market\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 18.05}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 10.18}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'restaurant'),
+		('pay_cab_driver', 'me', 6.6)
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'park\': 4.65, \'bus_stop_1\': 2.38}, \'bus_stop_3\': {\'park\': 11.47, \'market\': 3.37, \'bus_stop_1\': 5.25}, \'bus_stop_1\': {\'bus_stop_2\': 10.1}, \'restaurant\': {\'home\': 5.32, \'market\': 13.68, \'bus_stop_1\': 1.31}, \'park\': {\'restaurant\': 0.07}, \'home\': {\'park\': 0.97, \'market\': 11.8}, \'market\': {\'bus_stop_3\': 10.81, \'restaurant\': 1.18}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_1\', \'bus_stop_1:bus_stop_2\']',
+			'cash={\'me\': 17.96}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 1.61}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'restaurant'),
+		('ride_taxi', 'me', 'restaurant', 'market'),
+		('pay_cab_driver', 'me', 8.34)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {\'park\': 14.52, \'bus_stop_1\': 14.57}, \'bus_stop_1\': {\'home\': 6.77, \'market\': 10.08}, \'restaurant\': {\'bus_stop_2\': 11.34, \'market\': 10.92}, \'park\': {\'bus_stop_2\': 11.01, \'bus_stop_1\': 0.03}, \'home\': {\'park\': 5.87, \'bus_stop_3\': 1.42, \'restaurant\': 1.47}, \'market\': {\'home\': 3.99}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_3\', \'bus_stop_2:restaurant\', \'bus_stop_2:bus_stop_1\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:park\', \'bus_stop_3:market\']',
+			'cash={\'me\': 6.75}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 8.9}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'home', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'home\': 0.12, \'park\': 7.14, \'market\': 6.89, \'bus_stop_1\': 11.53}, \'bus_stop_3\': {\'park\': 13.29, \'market\': 4.9, \'bus_stop_1\': 14.12}, \'bus_stop_1\': {\'home\': 11.96, \'bus_stop_3\': 1.26}, \'restaurant\': {\'park\': 4.89}, \'park\': {\'home\': 1.14, \'bus_stop_2\': 1.56, \'market\': 14.19}, \'home\': {\'bus_stop_2\': 6.96, \'park\': 6.65, \'bus_stop_3\': 3.83, \'bus_stop_1\': 9.5}, \'market\': {\'home\': 8.45, \'park\': 9.27}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_2\', \'bus_stop_2:bus_stop_1\', \'bus_stop_3:home\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 15.09}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 15.17}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'park', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_3\': 14.95, \'bus_stop_1\': 13.04}, \'bus_stop_3\': {\'bus_stop_1\': 8.31}, \'bus_stop_1\': {\'home\': 7.0, \'park\': 5.91, \'market\': 3.62}, \'restaurant\': {\'home\': 12.08, \'park\': 0.4, \'market\': 4.97, \'bus_stop_1\': 1.61}, \'park\': {\'bus_stop_2\': 12.54, \'market\': 9.7}, \'home\': {\'bus_stop_2\': 14.13, \'park\': 4.3, \'market\': 12.27, \'restaurant\': 2.4}, \'market\': {\'bus_stop_3\': 10.84}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:bus_stop_1\', \'bus_stop_3:restaurant\']',
+			'cash={\'me\': 17.22}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 4.08}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'restaurant'),
+		('ride_taxi', 'me', 'restaurant', 'home'),
+		('pay_cab_driver', 'me', 7.54)
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'market\': 0.56, \'bus_stop_1\': 9.64}, \'bus_stop_3\': {\'home\': 10.39, \'restaurant\': 14.23}, \'bus_stop_1\': {\'bus_stop_3\': 1.05}, \'restaurant\': {\'park\': 2.35, \'bus_stop_1\': 1.97}, \'park\': {\'market\': 0.32, \'restaurant\': 2.12}, \'home\': {\'bus_stop_3\': 6.31}, \'market\': {\'home\': 14.53, \'bus_stop_2\': 8.89, \'bus_stop_1\': 7.88}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_1\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:bus_stop_2\', \'bus_stop_2:bus_stop_3\']',
+			'cash={\'me\': 16.02}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 13.13}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'restaurant'),
+		('ride_taxi', 'me', 'restaurant', 'park'),
+		('pay_cab_driver', 'me', 2.67)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {\'park\': 4.03, \'restaurant\': 8.09}, \'bus_stop_1\': {\'market\': 8.2, \'restaurant\': 4.5}, \'restaurant\': {\'bus_stop_3\': 10.59}, \'park\': {\'bus_stop_3\': 3.07, \'restaurant\': 9.92}, \'home\': {\'bus_stop_2\': 10.19, \'restaurant\': 5.2}, \'market\': {\'bus_stop_2\': 12.73, \'bus_stop_1\': 1.28, \'park\': 10.13, \'restaurant\': 0.75}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:home\', \'bus_stop_3:home\']',
+			'cash={\'me\': 14.27}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 1.34}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'market', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_3\': 3.06}, \'bus_stop_3\': {\'restaurant\': 1.52}, \'bus_stop_1\': {\'home\': 10.41, \'park\': 3.79, \'restaurant\': 6.36}, \'restaurant\': {\'home\': 0.24, \'park\': 9.37}, \'park\': {\'home\': 3.68, \'bus_stop_1\': 10.63, \'bus_stop_2\': 11.19, \'restaurant\': 12.34}, \'home\': {\'bus_stop_1\': 8.08, \'bus_stop_3\': 1.28, \'restaurant\': 10.23}, \'market\': {\'bus_stop_2\': 6.35, \'restaurant\': 14.63}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:market\', \'bus_stop_3:home\']',
+			'cash={\'me\': 13.22}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 0.79}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'restaurant'),
+		('pay_cab_driver', 'me', 6.62)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'park\': 3.38, \'market\': 0.31, \'restaurant\': 6.1}, \'bus_stop_3\': {}, \'bus_stop_1\': {\'market\': 2.82}, \'restaurant\': {\'home\': 2.01, \'bus_stop_3\': 8.24}, \'park\': {\'home\': 11.09, \'market\': 0.89}, \'home\': {\'park\': 0.82, \'market\': 13.77, \'restaurant\': 1.1}, \'market\': {\'home\': 9.17, \'bus_stop_2\': 0.66, \'bus_stop_3\': 7.64}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_2\', \'bus_stop_2:park\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 16.27}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 1.78}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'home'),
+		('pay_cab_driver', 'me', 6.08)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'market\': 0.02}, \'bus_stop_3\': {\'home\': 9.78, \'park\': 12.65}, \'bus_stop_1\': {\'market\': 14.64}, \'restaurant\': {\'home\': 12.2, \'market\': 5.13}, \'park\': {\'bus_stop_2\': 12.38, \'bus_stop_3\': 12.61, \'bus_stop_1\': 6.87}, \'home\': {}, \'market\': {\'home\': 7.26, \'bus_stop_3\': 0.31, \'restaurant\': 11.53}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:park\', \'bus_stop_2:restaurant\', \'bus_stop_3:market\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 18.67}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 10.08}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'restaurant'),
+		('pay_cab_driver', 'me', 7.26)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'home\': 14.16, \'park\': 7.41, \'bus_stop_3\': 1.8, \'bus_stop_1\': 8.35}, \'bus_stop_3\': {\'home\': 14.38, \'bus_stop_1\': 11.0, \'bus_stop_2\': 7.09, \'market\': 13.17, \'restaurant\': 9.89}, \'bus_stop_1\': {\'market\': 10.16}, \'restaurant\': {\'bus_stop_3\': 14.0, \'bus_stop_1\': 11.39}, \'park\': {\'bus_stop_2\': 2.59, \'bus_stop_3\': 6.9}, \'home\': {\'park\': 2.81, \'bus_stop_3\': 1.07, \'restaurant\': 8.13}, \'market\': {\'bus_stop_2\': 9.6}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:market\', \'bus_stop_2:home\', \'bus_stop_2:restaurant\', \'bus_stop_2:market\', \'bus_stop_2:bus_stop_2\']',
+			'cash={\'me\': 17.94}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 0.59}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'restaurant'),
+		('pay_cab_driver', 'me', 5.57)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_3\': 10.48, \'market\': 3.52}, \'bus_stop_3\': {\'bus_stop_2\': 0.46, \'bus_stop_1\': 14.47, \'park\': 0.74, \'market\': 10.2, \'restaurant\': 1.42}, \'bus_stop_1\': {\'home\': 8.17, \'bus_stop_3\': 13.85}, \'restaurant\': {\'bus_stop_3\': 14.23, \'market\': 3.28}, \'park\': {\'home\': 9.06}, \'home\': {\'bus_stop_3\': 0.88, \'market\': 11.18, \'restaurant\': 5.01}, \'market\': {\'bus_stop_2\': 11.98}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_1\', \'bus_stop_3:home\', \'bus_stop_3:restaurant\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 17.32}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 6.91}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'restaurant'),
+		('pay_cab_driver', 'me', 4.0)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'home\': 9.57, \'park\': 9.63}, \'bus_stop_3\': {\'home\': 14.9, \'park\': 5.1}, \'bus_stop_1\': {\'bus_stop_3\': 11.93}, \'restaurant\': {\'home\': 11.17, \'park\': 13.7, \'market\': 4.86}, \'park\': {\'bus_stop_3\': 6.92, \'restaurant\': 6.11}, \'home\': {\'bus_stop_2\': 1.22, \'park\': 0.82}, \'market\': {\'home\': 4.23, \'bus_stop_3\': 4.88}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:restaurant\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 4.41}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 11.14}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'home', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_3\': 3.27, \'market\': 12.82, \'restaurant\': 0.48}, \'bus_stop_3\': {\'bus_stop_2\': 7.59, \'park\': 2.32}, \'bus_stop_1\': {\'home\': 3.56, \'bus_stop_3\': 12.32, \'restaurant\': 8.66}, \'restaurant\': {\'home\': 5.27, \'market\': 13.4, \'bus_stop_1\': 13.07}, \'park\': {\'bus_stop_3\': 4.73}, \'home\': {\'bus_stop_2\': 1.97, \'bus_stop_3\': 4.76, \'bus_stop_1\': 13.71}, \'market\': {\'home\': 2.66, \'park\': 1.36, \'bus_stop_2\': 2.87, \'bus_stop_3\': 0.14}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_1\', \'bus_stop_3:home\']',
+			'cash={\'me\': 13.84}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 15.39}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'market', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 3.05}, \'bus_stop_3\': {\'home\': 0.83, \'market\': 2.83, \'restaurant\': 2.54}, \'bus_stop_1\': {\'market\': 9.76, \'restaurant\': 3.56}, \'restaurant\': {\'bus_stop_3\': 4.96, \'market\': 2.15}, \'park\': {\'home\': 4.95, \'bus_stop_3\': 0.17, \'bus_stop_1\': 2.66}, \'home\': {\'park\': 9.3, \'market\': 0.62}, \'market\': {\'home\': 10.12, \'park\': 8.11, \'restaurant\': 5.4}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_2:market\', \'bus_stop_2:bus_stop_2\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:market\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 18.34}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 8.59}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'home'),
+		('pay_cab_driver', 'me', 3.98)
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 10.12}, \'bus_stop_3\': {\'bus_stop_2\': 13.78, \'restaurant\': 1.14}, \'bus_stop_1\': {}, \'restaurant\': {\'bus_stop_3\': 0.83, \'bus_stop_1\': 13.09}, \'park\': {\'bus_stop_2\': 11.47}, \'home\': {\'bus_stop_2\': 8.76}, \'market\': {\'home\': 5.45, \'bus_stop_2\': 6.38}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_2\', \'bus_stop_2:bus_stop_1\', \'bus_stop_3:home\']',
+			'cash={\'me\': 19.78}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 14.65}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'restaurant', 'bus_stop_3'),
+		('pay_bus_driver', 'me', 2.0),
+		('ride_bus', 'me', 'bus_stop_3', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {}, \'bus_stop_1\': {}, \'restaurant\': {\'home\': 3.78, \'bus_stop_1\': 1.74}, \'park\': {\'bus_stop_2\': 7.61, \'bus_stop_1\': 14.28}, \'home\': {\'bus_stop_2\': 0.3, \'park\': 11.87, \'market\': 9.58, \'restaurant\': 2.5}, \'market\': {\'park\': 0.59}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_2:park\', \'bus_stop_2:bus_stop_1\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 17.63}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 14.41}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'restaurant'),
+		('pay_cab_driver', 'me', 2.75)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {\'bus_stop_2\': 13.49, \'bus_stop_1\': 2.9}, \'bus_stop_1\': {\'restaurant\': 3.91}, \'restaurant\': {\'home\': 11.76, \'bus_stop_3\': 1.78, \'bus_stop_1\': 11.7}, \'park\': {\'bus_stop_3\': 0.51}, \'home\': {\'bus_stop_3\': 6.99, \'market\': 2.78, \'restaurant\': 3.98}, \'market\': {}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_2:home\', \'bus_stop_3:home\', \'bus_stop_3:park\', \'bus_stop_3:restaurant\']',
+			'cash={\'me\': 18.46}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 1.86}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'park', 'bus_stop_3'),
+		('pay_bus_driver', 'me', 2.0),
+		('ride_bus', 'me', 'bus_stop_3', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'home\': 5.97, \'bus_stop_3\': 9.04}, \'bus_stop_3\': {\'bus_stop_2\': 6.7, \'park\': 9.09, \'market\': 5.8, \'bus_stop_1\': 2.01}, \'bus_stop_1\': {\'home\': 8.79, \'park\': 4.57, \'bus_stop_3\': 10.83}, \'restaurant\': {}, \'park\': {\'bus_stop_3\': 13.94}, \'home\': {\'bus_stop_1\': 3.9, \'park\': 10.13, \'bus_stop_3\': 12.81, \'market\': 13.93, \'restaurant\': 5.48}, \'market\': {\'home\': 13.63, \'bus_stop_2\': 10.65, \'bus_stop_3\': 0.22, \'restaurant\': 14.12}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:market\', \'bus_stop_2:bus_stop_1\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:bus_stop_1\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 14.38}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 1.39}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'restaurant'),
+		('pay_cab_driver', 'me', 8.56)
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 6.94, \'restaurant\': 1.54}, \'bus_stop_3\': {\'bus_stop_2\': 12.89, \'market\': 3.12}, \'bus_stop_1\': {\'park\': 10.52, \'bus_stop_3\': 13.14}, \'restaurant\': {\'bus_stop_2\': 6.99, \'park\': 11.32, \'bus_stop_3\': 0.53, \'bus_stop_1\': 6.47}, \'park\': {\'bus_stop_1\': 4.42, \'bus_stop_2\': 13.08, \'restaurant\': 3.66}, \'home\': {\'bus_stop_1\': 5.46}, \'market\': {\'bus_stop_2\': 4.19, \'bus_stop_3\': 1.94, \'restaurant\': 1.04}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:bus_stop_1\', \'bus_stop_3:home\', \'bus_stop_3:restaurant\']',
+			'cash={\'me\': 4.93}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 1.85}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'restaurant', 'bus_stop_3'),
+		('pay_bus_driver', 'me', 2.0),
+		('ride_bus', 'me', 'bus_stop_3', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'market\': 11.13, \'restaurant\': 9.16}, \'bus_stop_3\': {\'bus_stop_2\': 0.2}, \'bus_stop_1\': {\'home\': 1.93}, \'restaurant\': {\'home\': 13.07, \'park\': 4.71}, \'park\': {\'bus_stop_2\': 5.77, \'bus_stop_3\': 1.78, \'restaurant\': 3.46}, \'home\': {\'bus_stop_1\': 8.69, \'bus_stop_2\': 0.14, \'restaurant\': 0.28}, \'market\': {\'home\': 14.13, \'bus_stop_3\': 10.0}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_1:park\', \'bus_stop_1:restaurant\', \'bus_stop_1:market\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:restaurant\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:home\', \'bus_stop_3:restaurant\']',
+			'cash={\'me\': 12.6}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 9.97}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'home', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'home\': 4.81, \'market\': 3.93, \'restaurant\': 12.38}, \'bus_stop_3\': {\'bus_stop_1\': 14.56}, \'bus_stop_1\': {\'restaurant\': 9.77}, \'restaurant\': {\'bus_stop_2\': 14.06, \'market\': 10.53}, \'park\': {\'home\': 6.08, \'bus_stop_3\': 1.86}, \'home\': {\'market\': 3.68}, \'market\': {\'home\': 2.81, \'park\': 9.0}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_2:restaurant\', \'bus_stop_3:home\', \'bus_stop_3:park\', \'bus_stop_3:restaurant\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 16.3}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 1.39}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'home'),
+		('pay_cab_driver', 'me', 4.54)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'home\': 9.42}, \'bus_stop_3\': {\'bus_stop_1\': 0.04}, \'bus_stop_1\': {\'restaurant\': 12.72}, \'restaurant\': {}, \'park\': {\'bus_stop_3\': 0.91, \'market\': 3.93}, \'home\': {\'bus_stop_1\': 14.6, \'bus_stop_2\': 1.99, \'market\': 0.91, \'restaurant\': 6.7}, \'market\': {\'bus_stop_2\': 13.14, \'restaurant\': 3.23}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:home\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:home\', \'bus_stop_3:park\', \'bus_stop_3:market\', \'bus_stop_3:bus_stop_1\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 14.07}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 2.09}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'park', 'bus_stop_3'),
+		('pay_bus_driver', 'me', 2.0),
+		('ride_bus', 'me', 'bus_stop_3', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'home\': 8.63, \'bus_stop_3\': 7.59, \'restaurant\': 1.71}, \'bus_stop_3\': {\'market\': 9.19, \'bus_stop_1\': 9.91}, \'bus_stop_1\': {\'bus_stop_2\': 5.09, \'park\': 3.17, \'restaurant\': 2.34}, \'restaurant\': {\'home\': 10.61, \'bus_stop_2\': 7.76}, \'park\': {\'home\': 10.49, \'bus_stop_3\': 2.51, \'market\': 14.02}, \'home\': {\'market\': 8.34}, \'market\': {\'bus_stop_2\': 7.48, \'park\': 6.86, \'bus_stop_3\': 0.94}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_1\', \'bus_stop_1:bus_stop_2\', \'bus_stop_2:bus_stop_1\', \'bus_stop_3:park\']',
+			'cash={\'me\': 19.97}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 5.18}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'park'),
+		('pay_cab_driver', 'me', 4.93)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'home\': 14.99, \'park\': 5.38, \'market\': 6.33}, \'bus_stop_3\': {\'bus_stop_2\': 5.65}, \'bus_stop_1\': {\'bus_stop_2\': 13.35, \'bus_stop_3\': 4.02}, \'restaurant\': {\'park\': 12.04, \'market\': 6.18}, \'park\': {\'home\': 10.36, \'bus_stop_3\': 0.53}, \'home\': {\'market\': 3.54, \'restaurant\': 0.59}, \'market\': {\'park\': 7.51}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_2\', \'bus_stop_2:market\', \'bus_stop_3:restaurant\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 5.43}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 0.11}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'park', 'bus_stop_3'),
+		('pay_bus_driver', 'me', 2.0),
+		('ride_bus', 'me', 'bus_stop_3', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {}, \'bus_stop_1\': {\'market\': 13.19, \'restaurant\': 13.85}, \'restaurant\': {}, \'park\': {\'bus_stop_1\': 1.09, \'bus_stop_2\': 0.89, \'market\': 12.04, \'restaurant\': 11.1}, \'home\': {\'bus_stop_3\': 13.2}, \'market\': {}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:market\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 17.67}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 10.11}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'restaurant'),
+		('pay_cab_driver', 'me', 7.05)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 12.05}, \'bus_stop_3\': {\'home\': 8.41, \'bus_stop_2\': 1.52}, \'bus_stop_1\': {}, \'restaurant\': {\'home\': 11.42, \'bus_stop_3\': 8.34}, \'park\': {\'market\': 13.11, \'bus_stop_1\': 7.85}, \'home\': {\'park\': 12.53, \'bus_stop_3\': 0.78, \'bus_stop_1\': 9.96}, \'market\': {\'bus_stop_2\': 9.34}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_3\', \'bus_stop_2:home\', \'bus_stop_2:park\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:park\', \'bus_stop_3:market\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 15.39}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 10.6}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'home', 'bus_stop_3'),
+		('pay_bus_driver', 'me', 2.0),
+		('ride_bus', 'me', 'bus_stop_3', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'park\': 1.13, \'market\': 10.4}, \'bus_stop_3\': {\'market\': 5.11}, \'bus_stop_1\': {\'home\': 6.7}, \'restaurant\': {\'bus_stop_2\': 3.05, \'bus_stop_3\': 4.33, \'bus_stop_1\': 8.01}, \'park\': {\'market\': 2.26}, \'home\': {\'bus_stop_2\': 0.62, \'park\': 5.35}, \'market\': {\'bus_stop_2\': 9.56, \'bus_stop_3\': 0.37, \'bus_stop_1\': 5.62, \'restaurant\': 1.27, \'park\': 7.66, \'home\': 7.02}}',
+			'target=\'me\'',
+			'bus_route=[]',
+			'cash={\'me\': 13.65}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 13.67}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'market', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'home\': 14.54, \'bus_stop_3\': 3.39, \'restaurant\': 1.78}, \'bus_stop_3\': {\'bus_stop_1\': 1.04, \'restaurant\': 0.6}, \'bus_stop_1\': {\'park\': 11.77}, \'restaurant\': {\'park\': 5.48, \'bus_stop_3\': 5.2, \'market\': 11.59, \'bus_stop_1\': 9.4}, \'park\': {\'bus_stop_3\': 1.55, \'market\': 11.37}, \'home\': {\'bus_stop_3\': 7.48}, \'market\': {\'home\': 12.87, \'bus_stop_3\': 8.48, \'park\': 0.98, \'bus_stop_2\': 1.28, \'restaurant\': 2.99}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_1:market\', \'bus_stop_2:restaurant\', \'bus_stop_2:bus_stop_1\', \'bus_stop_2:bus_stop_3\']',
+			'cash={\'me\': 5.38}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 15.1}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'market', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'market\': 10.04}, \'bus_stop_3\': {\'market\': 12.98}, \'bus_stop_1\': {\'bus_stop_2\': 11.23, \'bus_stop_3\': 8.31, \'restaurant\': 7.34}, \'restaurant\': {\'park\': 7.16, \'bus_stop_1\': 2.59}, \'park\': {}, \'home\': {\'bus_stop_1\': 6.48, \'bus_stop_2\': 9.5, \'bus_stop_3\': 0.1, \'restaurant\': 6.06}, \'market\': {\'park\': 9.11}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:market\', \'bus_stop_2:restaurant\', \'bus_stop_2:bus_stop_1\', \'bus_stop_3:park\', \'bus_stop_3:bus_stop_2\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 8.48}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 1.9}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'home', 'bus_stop_3'),
+		('pay_bus_driver', 'me', 2.0),
+		('ride_bus', 'me', 'bus_stop_3', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_3\': 4.97}, \'bus_stop_3\': {\'home\': 2.94, \'park\': 2.47}, \'bus_stop_1\': {\'home\': 1.49, \'bus_stop_3\': 1.02}, \'restaurant\': {\'park\': 12.01, \'bus_stop_1\': 1.53}, \'park\': {\'home\': 12.24, \'bus_stop_3\': 1.06, \'market\': 12.24, \'bus_stop_1\': 6.54}, \'home\': {\'bus_stop_1\': 1.27, \'park\': 11.91, \'restaurant\': 12.88}, \'market\': {}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:bus_stop_1\', \'bus_stop_2:bus_stop_1\', \'bus_stop_2:bus_stop_3\']',
+			'cash={\'me\': 8.91}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 0.22}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'restaurant'),
+		('pay_cab_driver', 'me', 7.94)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 13.27, \'restaurant\': 10.34}, \'bus_stop_3\': {\'bus_stop_2\': 8.26}, \'bus_stop_1\': {}, \'restaurant\': {\'bus_stop_3\': 12.52, \'market\': 10.3}, \'park\': {}, \'home\': {\'park\': 0.74, \'bus_stop_3\': 13.3, \'bus_stop_1\': 0.11}, \'market\': {\'home\': 6.82}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:park\', \'bus_stop_3:park\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 15.04}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 1.45}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'home', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'home\': 3.17, \'park\': 5.03, \'restaurant\': 2.63}, \'bus_stop_3\': {\'bus_stop_1\': 13.86}, \'bus_stop_1\': {\'restaurant\': 6.71}, \'restaurant\': {\'bus_stop_2\': 6.32, \'market\': 7.78}, \'park\': {\'bus_stop_1\': 7.53, \'bus_stop_2\': 13.88, \'restaurant\': 10.55}, \'home\': {\'bus_stop_2\': 0.21, \'bus_stop_1\': 12.59, \'park\': 1.6, \'market\': 12.75, \'restaurant\': 1.31}, \'market\': {\'home\': 5.14, \'park\': 9.2, \'bus_stop_2\': 1.23}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_1:park\', \'bus_stop_1:market\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:market\', \'bus_stop_2:bus_stop_1\', \'bus_stop_3:market\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 16.01}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 2.37}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'home', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 4.93, \'market\': 6.78, \'restaurant\': 5.7}, \'bus_stop_3\': {}, \'bus_stop_1\': {\'park\': 14.87}, \'restaurant\': {\'park\': 1.39, \'bus_stop_1\': 1.59}, \'park\': {\'bus_stop_2\': 0.19}, \'home\': {\'restaurant\': 6.2}, \'market\': {\'bus_stop_1\': 8.07, \'bus_stop_3\': 14.7, \'restaurant\': 1.03}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:market\', \'bus_stop_3:bus_stop_1\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 4.98}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 12.51}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'restaurant', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 6.9}, \'bus_stop_3\': {\'bus_stop_2\': 14.42, \'park\': 5.44, \'bus_stop_1\': 0.08}, \'bus_stop_1\': {\'home\': 4.22, \'bus_stop_3\': 2.25, \'market\': 3.66}, \'restaurant\': {\'bus_stop_3\': 12.52}, \'park\': {\'bus_stop_2\': 0.92, \'bus_stop_3\': 4.87, \'restaurant\': 1.75}, \'home\': {\'park\': 9.13}, \'market\': {\'home\': 5.47, \'bus_stop_1\': 9.36}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:home\', \'bus_stop_3:restaurant\']',
+			'cash={\'me\': 9.6}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 19.53}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'park', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'park\': 9.14, \'bus_stop_1\': 5.78}, \'bus_stop_3\': {\'restaurant\': 12.25}, \'bus_stop_1\': {\'park\': 7.74, \'bus_stop_3\': 3.59}, \'restaurant\': {\'bus_stop_1\': 13.9}, \'park\': {\'home\': 13.6, \'bus_stop_3\': 1.05}, \'home\': {\'bus_stop_3\': 14.32, \'market\': 11.96}, \'market\': {\'bus_stop_2\': 10.28, \'park\': 8.6, \'bus_stop_3\': 2.48}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:market\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:home\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 17.11}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 2.53}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'home'),
+		('pay_cab_driver', 'me', 8.3)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {\'park\': 9.87, \'restaurant\': 1.37}, \'bus_stop_1\': {\'market\': 1.93, \'restaurant\': 11.15}, \'restaurant\': {\'home\': 4.15, \'park\': 13.44, \'bus_stop_3\': 6.29, \'bus_stop_1\': 2.59}, \'park\': {\'bus_stop_3\': 14.5}, \'home\': {\'bus_stop_1\': 0.34, \'bus_stop_3\': 13.17, \'restaurant\': 12.67}, \'market\': {\'home\': 2.14, \'park\': 5.33, \'bus_stop_2\': 0.38, \'bus_stop_1\': 6.85}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_1\', \'bus_stop_2:restaurant\']',
+			'cash={\'me\': 17.38}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 1.16}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'home'),
+		('pay_cab_driver', 'me', 2.57)
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 7.14, \'park\': 2.21, \'restaurant\': 0.36}, \'bus_stop_3\': {\'park\': 7.95, \'restaurant\': 1.38}, \'bus_stop_1\': {\'home\': 13.53}, \'restaurant\': {\'park\': 14.39, \'market\': 1.25, \'bus_stop_1\': 1.36}, \'park\': {}, \'home\': {\'park\': 3.37}, \'market\': {}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:market\', \'bus_stop_2:home\', \'bus_stop_2:restaurant\', \'bus_stop_3:restaurant\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 12.11}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 0.01}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('walk', 'me', 'restaurant', 'market')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'home\': 7.24}, \'bus_stop_3\': {\'restaurant\': 14.03}, \'bus_stop_1\': {\'park\': 5.76}, \'restaurant\': {\'home\': 9.66, \'bus_stop_2\': 5.69}, \'park\': {\'bus_stop_1\': 13.5, \'restaurant\': 12.67}, \'home\': {\'restaurant\': 8.26}, \'market\': {\'bus_stop_2\': 1.0, \'bus_stop_3\': 2.39}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:home\', \'bus_stop_2:park\', \'bus_stop_2:restaurant\', \'bus_stop_2:bus_stop_3\']',
+			'cash={\'me\': 18.5}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 1.91}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'market', 'bus_stop_2'),
+		('pay_bus_driver', 'me', 2.0),
+		('ride_bus', 'me', 'bus_stop_2', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'home\': 1.39, \'market\': 3.46}, \'bus_stop_3\': {\'home\': 8.11, \'bus_stop_1\': 6.67}, \'bus_stop_1\': {\'home\': 8.02, \'bus_stop_2\': 13.8, \'market\': 0.26}, \'restaurant\': {\'bus_stop_2\': 7.32, \'park\': 14.99, \'market\': 3.39}, \'park\': {\'restaurant\': 7.99}, \'home\': {\'bus_stop_2\': 6.37, \'market\': 10.56, \'bus_stop_1\': 11.09}, \'market\': {\'bus_stop_2\': 1.26, \'park\': 8.14, \'bus_stop_1\': 4.26}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:bus_stop_2\', \'bus_stop_2:park\', \'bus_stop_2:market\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:market\']',
+			'cash={\'me\': 19.7}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 7.9}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'park'),
+		('pay_cab_driver', 'me', 5.57)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'park\': 4.53, \'market\': 12.51, \'restaurant\': 14.35}, \'bus_stop_3\': {\'home\': 8.32, \'park\': 12.82, \'restaurant\': 12.83}, \'bus_stop_1\': {\'bus_stop_2\': 1.04, \'park\': 3.66}, \'restaurant\': {\'bus_stop_2\': 9.25, \'bus_stop_3\': 2.91, \'bus_stop_1\': 3.84}, \'park\': {\'home\': 3.82, \'bus_stop_2\': 0.07}, \'home\': {}, \'market\': {\'bus_stop_2\': 7.79}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:home\', \'bus_stop_3:market\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 6.45}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 1.54}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'home'),
+		('pay_cab_driver', 'me', 3.41)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'park\': 7.93, \'bus_stop_3\': 0.28, \'market\': 13.51}, \'bus_stop_3\': {\'home\': 7.13, \'bus_stop_2\': 7.6, \'bus_stop_1\': 3.17}, \'bus_stop_1\': {\'home\': 4.04, \'bus_stop_2\': 7.0}, \'restaurant\': {\'home\': 6.51, \'bus_stop_3\': 13.71, \'market\': 13.95, \'bus_stop_1\': 6.37}, \'park\': {\'bus_stop_2\': 0.5, \'bus_stop_3\': 4.32, \'market\': 9.8}, \'home\': {\'bus_stop_1\': 12.25, \'restaurant\': 6.81}, \'market\': {\'bus_stop_3\': 1.06, \'restaurant\': 14.68}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_1\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:park\', \'bus_stop_3:market\']',
+			'cash={\'me\': 17.89}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 6.43}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'market'),
+		('pay_cab_driver', 'me', 6.4)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'park\': 1.98, \'bus_stop_3\': 11.88, \'bus_stop_1\': 14.27}, \'bus_stop_3\': {\'park\': 0.84}, \'bus_stop_1\': {\'bus_stop_3\': 9.2, \'market\': 6.29}, \'restaurant\': {\'bus_stop_2\': 10.24, \'bus_stop_3\': 8.51}, \'park\': {\'home\': 4.6, \'bus_stop_2\': 0.72, \'restaurant\': 9.96}, \'home\': {\'bus_stop_2\': 1.06, \'park\': 0.8, \'restaurant\': 12.18}, \'market\': {\'bus_stop_3\': 7.13, \'bus_stop_1\': 13.43}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_3\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:home\']',
+			'cash={\'me\': 13.59}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 1.1}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'home', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 10.64, \'market\': 7.27, \'restaurant\': 9.33}, \'bus_stop_3\': {\'home\': 12.31, \'bus_stop_2\': 14.67, \'bus_stop_1\': 1.19}, \'bus_stop_1\': {\'bus_stop_2\': 13.4, \'market\': 1.16}, \'restaurant\': {\'bus_stop_1\': 12.6}, \'park\': {\'home\': 0.55, \'bus_stop_2\': 0.8, \'market\': 6.49}, \'home\': {\'bus_stop_3\': 10.44}, \'market\': {\'home\': 0.03, \'park\': 14.74, \'bus_stop_2\': 1.42}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:park\', \'bus_stop_2:restaurant\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:home\', \'bus_stop_3:park\']',
+			'cash={\'me\': 19.57}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 11.99}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'market', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {\'bus_stop_2\': 7.75, \'bus_stop_1\': 9.5}, \'bus_stop_1\': {\'bus_stop_2\': 0.27}, \'restaurant\': {\'bus_stop_2\': 4.02}, \'park\': {\'market\': 6.17, \'bus_stop_1\': 10.75}, \'home\': {}, \'market\': {\'home\': 0.64, \'bus_stop_3\': 0.68, \'restaurant\': 10.63}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:market\', \'bus_stop_3:park\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 13.32}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 4.83}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'market', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'park\': 6.95}, \'bus_stop_3\': {\'bus_stop_1\': 12.3, \'restaurant\': 10.2}, \'bus_stop_1\': {\'home\': 6.33, \'bus_stop_2\': 13.64}, \'restaurant\': {\'home\': 3.21, \'park\': 12.55, \'bus_stop_3\': 0.84, \'bus_stop_1\': 13.62}, \'park\': {\'bus_stop_2\': 8.42, \'bus_stop_1\': 8.37}, \'home\': {\'bus_stop_2\': 13.28, \'market\': 3.82}, \'market\': {\'bus_stop_3\': 7.57, \'restaurant\': 13.64}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:restaurant\', \'bus_stop_1:market\', \'bus_stop_1:bus_stop_1\', \'bus_stop_2:market\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:home\']',
+			'cash={\'me\': 14.24}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 2.44}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'restaurant'),
+		('ride_taxi', 'me', 'restaurant', 'park'),
+		('pay_cab_driver', 'me', 7.78)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'home\': 4.68, \'park\': 7.47, \'bus_stop_3\': 7.07}, \'bus_stop_3\': {}, \'bus_stop_1\': {\'bus_stop_2\': 8.65}, \'restaurant\': {\'bus_stop_2\': 11.67}, \'park\': {\'bus_stop_2\': 2.27}, \'home\': {\'bus_stop_2\': 0.29}, \'market\': {\'bus_stop_1\': 7.96}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_1:restaurant\', \'bus_stop_2:park\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:park\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 17.49}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 14.75}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'home', 'bus_stop_2'),
+		('pay_bus_driver', 'me', 2.0),
+		('ride_bus', 'me', 'bus_stop_2', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 10.96, \'park\': 4.49, \'market\': 3.04, \'restaurant\': 4.85}, \'bus_stop_3\': {\'home\': 12.11, \'bus_stop_2\': 4.82, \'market\': 1.9, \'bus_stop_1\': 6.87}, \'bus_stop_1\': {\'home\': 4.7, \'market\': 0.95, \'restaurant\': 2.93}, \'restaurant\': {\'home\': 10.15, \'park\': 6.77}, \'park\': {\'bus_stop_2\': 1.09, \'bus_stop_3\': 11.56}, \'home\': {\'bus_stop_1\': 4.63}, \'market\': {\'home\': 5.65, \'restaurant\': 5.35}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:home\', \'bus_stop_2:restaurant\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 11.16}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 8.04}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'park', 'bus_stop_2'),
+		('pay_bus_driver', 'me', 1.0),
+		('ride_bus', 'me', 'bus_stop_2', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'market\': 11.93, \'restaurant\': 14.9}, \'bus_stop_3\': {\'home\': 4.69, \'bus_stop_1\': 6.39, \'park\': 12.41, \'restaurant\': 8.78}, \'bus_stop_1\': {}, \'restaurant\': {\'bus_stop_2\': 5.28, \'bus_stop_1\': 11.11}, \'park\': {\'home\': 2.21, \'bus_stop_2\': 9.98, \'bus_stop_1\': 0.55}, \'home\': {\'bus_stop_2\': 1.91, \'park\': 1.32, \'market\': 1.49, \'bus_stop_1\': 5.82}, \'market\': {\'bus_stop_2\': 6.87, \'bus_stop_1\': 3.55}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_3:market\']',
+			'cash={\'me\': 16.86}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 3.28}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'home'),
+		('pay_cab_driver', 'me', 2.6)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'park\': 4.37}, \'bus_stop_3\': {\'bus_stop_1\': 5.11}, \'bus_stop_1\': {\'bus_stop_2\': 13.15, \'park\': 13.13, \'market\': 2.53}, \'restaurant\': {\'home\': 0.58}, \'park\': {\'bus_stop_1\': 9.2}, \'home\': {\'park\': 10.59, \'bus_stop_3\': 9.19, \'market\': 13.58}, \'market\': {\'bus_stop_2\': 7.34, \'bus_stop_3\': 0.9, \'restaurant\': 4.59}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_1\', \'bus_stop_2:bus_stop_1\', \'bus_stop_3:home\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 13.12}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 3.22}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'restaurant'),
+		('pay_cab_driver', 'me', 3.79)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'park\': 5.19, \'bus_stop_3\': 8.5}, \'bus_stop_3\': {\'park\': 9.1}, \'bus_stop_1\': {\'home\': 4.61, \'bus_stop_3\': 0.92, \'market\': 8.84, \'restaurant\': 10.83}, \'restaurant\': {\'bus_stop_3\': 8.35, \'bus_stop_1\': 8.26}, \'park\': {\'bus_stop_1\': 7.31, \'bus_stop_3\': 0.88, \'restaurant\': 3.62}, \'home\': {\'restaurant\': 8.92}, \'market\': {\'bus_stop_2\': 6.35, \'restaurant\': 12.11}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_2\', \'bus_stop_2:home\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 10.56}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 0.2}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'restaurant'),
+		('pay_cab_driver', 'me', 3.31)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 4.95}, \'bus_stop_3\': {\'home\': 10.63, \'restaurant\': 12.32}, \'bus_stop_1\': {\'park\': 6.28, \'restaurant\': 2.01}, \'restaurant\': {\'bus_stop_2\': 11.92}, \'park\': {\'bus_stop_1\': 1.62, \'market\': 10.66, \'restaurant\': 14.44}, \'home\': {\'bus_stop_2\': 4.55, \'market\': 10.78}, \'market\': {\'home\': 4.13, \'restaurant\': 9.89}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_3\', \'bus_stop_3:park\', \'bus_stop_3:market\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 19.63}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 10.56}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'restaurant'),
+		('pay_cab_driver', 'me', 8.72)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {\'restaurant\': 6.45}, \'bus_stop_1\': {\'home\': 4.33, \'bus_stop_3\': 10.97, \'market\': 5.22, \'restaurant\': 9.06}, \'restaurant\': {}, \'park\': {\'bus_stop_2\': 14.16, \'restaurant\': 2.13}, \'home\': {\'park\': 10.31, \'bus_stop_1\': 3.65}, \'market\': {\'home\': 0.62, \'bus_stop_2\': 1.75}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_3\', \'bus_stop_2:park\', \'bus_stop_2:restaurant\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 17.92}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 13.62}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'market', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'home\': 3.39, \'bus_stop_1\': 12.55, \'restaurant\': 10.38}, \'bus_stop_3\': {\'home\': 8.33, \'park\': 2.18}, \'bus_stop_1\': {\'bus_stop_2\': 5.17, \'market\': 4.91}, \'restaurant\': {\'home\': 3.72, \'bus_stop_2\': 14.2, \'bus_stop_3\': 10.58}, \'park\': {\'market\': 4.65}, \'home\': {\'bus_stop_1\': 0.04, \'park\': 11.85, \'market\': 0.55, \'restaurant\': 2.43}, \'market\': {\'home\': 11.34, \'bus_stop_1\': 11.93, \'bus_stop_3\': 7.73, \'restaurant\': 5.51}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:home\', \'bus_stop_2:restaurant\', \'bus_stop_2:market\']',
+			'cash={\'me\': 12.57}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 5.91}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'restaurant'),
+		('pay_cab_driver', 'me', 2.71)
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {\'home\': 11.25, \'bus_stop_2\': 4.78, \'market\': 13.27, \'restaurant\': 6.99}, \'bus_stop_1\': {\'bus_stop_3\': 5.67}, \'restaurant\': {\'park\': 7.68, \'market\': 3.22, \'bus_stop_1\': 0.31}, \'park\': {\'home\': 13.05}, \'home\': {}, \'market\': {\'home\': 14.9, \'bus_stop_3\': 8.72}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:market\', \'bus_stop_1:bus_stop_3\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 17.86}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 9.21}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'restaurant'),
+		('ride_taxi', 'me', 'restaurant', 'park'),
+		('pay_cab_driver', 'me', 5.34)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'home\': 1.1, \'bus_stop_1\': 12.85}, \'bus_stop_3\': {\'park\': 10.28, \'restaurant\': 8.66}, \'bus_stop_1\': {\'park\': 14.98, \'market\': 10.21}, \'restaurant\': {\'home\': 10.6, \'bus_stop_3\': 8.02}, \'park\': {\'bus_stop_3\': 3.46, \'market\': 14.61, \'bus_stop_1\': 14.57}, \'home\': {\'bus_stop_2\': 5.56, \'bus_stop_1\': 0.01}, \'market\': {\'home\': 1.65, \'park\': 0.07, \'bus_stop_3\': 1.27, \'restaurant\': 2.45}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:bus_stop_1\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 8.92}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 1.07}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'market', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'restaurant\': 9.11}, \'bus_stop_3\': {\'park\': 13.64, \'market\': 7.29}, \'bus_stop_1\': {\'bus_stop_2\': 2.27, \'bus_stop_3\': 14.02, \'market\': 7.05, \'restaurant\': 2.22}, \'restaurant\': {\'park\': 4.64, \'bus_stop_1\': 9.73}, \'park\': {\'bus_stop_2\': 0.82, \'market\': 0.82}, \'home\': {\'bus_stop_2\': 5.11, \'market\': 4.42}, \'market\': {\'bus_stop_1\': 11.21}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:restaurant\', \'bus_stop_2:restaurant\', \'bus_stop_2:bus_stop_1\']',
+			'cash={\'me\': 13.53}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 5.82}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('walk', 'me', 'park', 'market')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'park\': 3.22, \'market\': 3.77, \'restaurant\': 9.73}, \'bus_stop_3\': {\'home\': 4.29, \'bus_stop_2\': 9.36}, \'bus_stop_1\': {\'market\': 3.51, \'restaurant\': 3.76}, \'restaurant\': {\'home\': 9.12, \'bus_stop_3\': 6.7}, \'park\': {\'home\': 7.36, \'bus_stop_1\': 3.37, \'bus_stop_3\': 14.7, \'restaurant\': 11.17}, \'home\': {\'park\': 13.9, \'bus_stop_3\': 11.99}, \'market\': {\'park\': 4.29, \'bus_stop_3\': 1.04}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_2:park\', \'bus_stop_2:restaurant\', \'bus_stop_3:restaurant\', \'bus_stop_3:bus_stop_1\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 19.27}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 13.3}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'park'),
+		('pay_cab_driver', 'me', 3.65)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'park\': 11.85}, \'bus_stop_3\': {\'bus_stop_1\': 0.7, \'park\': 9.39, \'restaurant\': 3.34}, \'bus_stop_1\': {\'home\': 8.16, \'bus_stop_2\': 1.78, \'bus_stop_3\': 0.93}, \'restaurant\': {\'home\': 13.18, \'bus_stop_2\': 10.17, \'bus_stop_1\': 11.42}, \'park\': {\'home\': 6.27, \'bus_stop_3\': 1.05, \'restaurant\': 1.96}, \'home\': {\'market\': 6.0}, \'market\': {\'bus_stop_2\': 10.15, \'bus_stop_3\': 10.76}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:market\', \'bus_stop_1:bus_stop_1\', \'bus_stop_1:bus_stop_2\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:home\', \'bus_stop_3:bus_stop_1\', \'bus_stop_3:bus_stop_2\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 18.5}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 13.5}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'park', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'park\': 9.08, \'market\': 2.21}, \'bus_stop_3\': {\'home\': 7.6, \'bus_stop_1\': 4.41}, \'bus_stop_1\': {\'park\': 3.5}, \'restaurant\': {\'bus_stop_2\': 1.68, \'park\': 0.05}, \'park\': {\'market\': 10.99}, \'home\': {\'bus_stop_2\': 5.35, \'market\': 12.28}, \'market\': {\'bus_stop_2\': 7.46, \'bus_stop_3\': 6.35, \'restaurant\': 3.34}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_1\', \'bus_stop_2:home\', \'bus_stop_2:market\', \'bus_stop_3:park\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 5.03}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 8.93}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'restaurant', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'market\': 10.95, \'bus_stop_1\': 4.97}, \'bus_stop_3\': {\'park\': 5.16}, \'bus_stop_1\': {\'bus_stop_2\': 13.91, \'market\': 14.66}, \'restaurant\': {\'home\': 4.98, \'park\': 1.56, \'bus_stop_3\': 11.87, \'bus_stop_1\': 1.24}, \'park\': {\'home\': 6.36, \'bus_stop_1\': 7.62}, \'home\': {\'bus_stop_1\': 12.09}, \'market\': {\'park\': 9.02, \'bus_stop_3\': 5.99}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_1\', \'bus_stop_1:bus_stop_2\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 4.24}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 1.34}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'restaurant', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'home\': 12.55, \'park\': 12.73, \'market\': 3.58}, \'bus_stop_3\': {\'home\': 1.92, \'bus_stop_1\': 13.54}, \'bus_stop_1\': {\'home\': 7.07}, \'restaurant\': {\'bus_stop_3\': 6.33}, \'park\': {}, \'home\': {\'bus_stop_2\': 0.01, \'bus_stop_3\': 7.41, \'market\': 13.87, \'restaurant\': 0.09}, \'market\': {\'home\': 4.17}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:market\', \'bus_stop_1:bus_stop_1\', \'bus_stop_1:bus_stop_2\', \'bus_stop_2:bus_stop_1\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:park\', \'bus_stop_3:bus_stop_1\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 15.02}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 16.53}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'home', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {\'home\': 7.34, \'bus_stop_2\': 10.86, \'market\': 0.44, \'bus_stop_1\': 14.72}, \'bus_stop_1\': {\'bus_stop_2\': 12.79, \'park\': 13.09, \'market\': 8.0}, \'restaurant\': {}, \'park\': {\'bus_stop_2\': 7.07}, \'home\': {}, \'market\': {\'bus_stop_1\': 4.17, \'bus_stop_2\': 1.36, \'restaurant\': 4.89}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_1\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:restaurant\', \'bus_stop_3:home\']',
+			'cash={\'me\': 8.37}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 2.14}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'restaurant'),
+		('pay_cab_driver', 'me', 3.94)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {\'bus_stop_2\': 0.77}, \'bus_stop_1\': {\'market\': 13.67, \'restaurant\': 7.17}, \'restaurant\': {\'bus_stop_2\': 2.17, \'bus_stop_1\': 3.98}, \'park\': {\'bus_stop_2\': 9.92, \'market\': 12.71, \'restaurant\': 6.1}, \'home\': {\'park\': 12.23, \'restaurant\': 4.96}, \'market\': {\'home\': 11.67, \'bus_stop_2\': 1.98}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_3:home\', \'bus_stop_3:restaurant\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 11.87}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 1.52}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'home'),
+		('pay_cab_driver', 'me', 7.33)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'park\': 11.4, \'bus_stop_1\': 10.34}, \'bus_stop_3\': {\'home\': 13.59, \'bus_stop_2\': 4.96, \'market\': 6.67}, \'bus_stop_1\': {\'bus_stop_3\': 9.03, \'market\': 9.82}, \'restaurant\': {\'bus_stop_2\': 5.86, \'bus_stop_3\': 4.29}, \'park\': {\'bus_stop_2\': 13.71}, \'home\': {\'bus_stop_2\': 1.47, \'market\': 13.8}, \'market\': {\'park\': 1.16}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_2:home\', \'bus_stop_2:restaurant\', \'bus_stop_3:park\']',
+			'cash={\'me\': 17.33}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 1.06}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'market'),
+		('pay_cab_driver', 'me', 8.4)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'home\': 8.99, \'market\': 5.93, \'restaurant\': 1.13}, \'bus_stop_3\': {\'bus_stop_2\': 0.71, \'park\': 2.05, \'restaurant\': 4.36}, \'bus_stop_1\': {\'market\': 3.76}, \'restaurant\': {\'bus_stop_3\': 13.32}, \'park\': {\'bus_stop_2\': 1.09, \'market\': 2.92}, \'home\': {\'bus_stop_3\': 0.04, \'restaurant\': 3.96}, \'market\': {\'bus_stop_3\': 10.31}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:home\']',
+			'cash={\'me\': 9.94}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 6.93}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'market'),
+		('pay_cab_driver', 'me', 2.96)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'home\': 5.35}, \'bus_stop_3\': {\'bus_stop_2\': 10.17, \'park\': 12.92}, \'bus_stop_1\': {}, \'restaurant\': {\'bus_stop_3\': 14.97, \'market\': 9.18}, \'park\': {\'bus_stop_2\': 6.03}, \'home\': {\'park\': 6.52, \'bus_stop_1\': 6.18}, \'market\': {\'home\': 10.56, \'park\': 14.01, \'bus_stop_2\': 0.29, \'restaurant\': 3.19}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_2\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:restaurant\']',
+			'cash={\'me\': 18.43}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 1.44}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'park'),
+		('pay_cab_driver', 'me', 8.5)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'home\': 9.57, \'bus_stop_3\': 0.81}, \'bus_stop_3\': {\'restaurant\': 7.13}, \'bus_stop_1\': {\'bus_stop_2\': 11.75, \'bus_stop_3\': 0.45, \'market\': 4.52}, \'restaurant\': {\'home\': 2.58, \'bus_stop_2\': 3.58}, \'park\': {\'home\': 10.81, \'bus_stop_1\': 12.32}, \'home\': {\'bus_stop_1\': 1.24, \'park\': 3.74, \'restaurant\': 0.97}, \'market\': {\'bus_stop_3\': 10.59}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_2\', \'bus_stop_2:market\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:bus_stop_1\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 11.33}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 7.88}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'park'),
+		('pay_cab_driver', 'me', 3.37)
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'park\': 14.5}, \'bus_stop_3\': {\'market\': 4.53, \'restaurant\': 14.88}, \'bus_stop_1\': {\'bus_stop_2\': 4.15, \'park\': 10.57, \'market\': 14.83}, \'restaurant\': {\'bus_stop_2\': 7.83, \'bus_stop_3\': 1.81, \'market\': 12.74}, \'park\': {}, \'home\': {\'bus_stop_1\': 4.1}, \'market\': {\'park\': 6.44}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_2:home\', \'bus_stop_2:market\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:home\', \'bus_stop_3:park\']',
+			'cash={\'me\': 17.2}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 10.52}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('walk', 'me', 'restaurant', 'bus_stop_3'),
+		('pay_bus_driver', 'me', 2.0),
+		('ride_bus', 'me', 'bus_stop_3', 'home')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {\'bus_stop_2\': 6.7}, \'bus_stop_1\': {\'bus_stop_2\': 6.14}, \'restaurant\': {}, \'park\': {\'market\': 13.42}, \'home\': {\'park\': 2.04, \'bus_stop_3\': 0.19, \'bus_stop_1\': 10.53}, \'market\': {\'home\': 5.27, \'bus_stop_1\': 4.39}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:bus_stop_1\', \'bus_stop_3:market\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 17.21}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 1.11}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'park'),
+		('pay_cab_driver', 'me', 2.52)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'park\': 5.83, \'bus_stop_3\': 5.66, \'market\': 5.23}, \'bus_stop_3\': {\'bus_stop_2\': 9.9, \'bus_stop_1\': 12.54, \'park\': 9.19, \'restaurant\': 3.43}, \'bus_stop_1\': {\'bus_stop_2\': 8.93}, \'restaurant\': {\'home\': 11.01, \'market\': 7.69}, \'park\': {\'bus_stop_2\': 14.9, \'bus_stop_3\': 9.31, \'market\': 0.72, \'bus_stop_1\': 3.63}, \'home\': {\'bus_stop_2\': 6.9, \'bus_stop_3\': 0.55, \'restaurant\': 5.45}, \'market\': {\'bus_stop_3\': 9.4, \'bus_stop_1\': 13.87}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_2\', \'bus_stop_2:restaurant\', \'bus_stop_2:market\', \'bus_stop_3:restaurant\']',
+			'cash={\'me\': 14.14}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 0.76}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'restaurant'),
+		('pay_cab_driver', 'me', 4.22)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_3\': 1.67}, \'bus_stop_3\': {\'home\': 5.94, \'park\': 13.86, \'bus_stop_2\': 4.21, \'bus_stop_1\': 9.33}, \'bus_stop_1\': {\'home\': 12.44, \'market\': 5.15}, \'restaurant\': {\'bus_stop_2\': 7.48, \'park\': 2.98, \'bus_stop_3\': 9.92, \'bus_stop_1\': 13.31}, \'park\': {}, \'home\': {\'bus_stop_2\': 0.56, \'market\': 0.66, \'bus_stop_1\': 6.14}, \'market\': {\'bus_stop_3\': 8.5, \'restaurant\': 4.48}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_1:bus_stop_1\', \'bus_stop_1:bus_stop_2\', \'bus_stop_2:park\', \'bus_stop_2:bus_stop_2\', \'bus_stop_2:bus_stop_3\']',
+			'cash={\'me\': 10.92}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 5.01}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'home', 'bus_stop_2'),
+		('pay_bus_driver', 'me', 2.0),
+		('ride_bus', 'me', 'bus_stop_2', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_3\': 4.23, \'bus_stop_1\': 12.66}, \'bus_stop_3\': {\'home\': 7.42, \'park\': 12.56, \'bus_stop_2\': 7.64, \'bus_stop_1\': 11.57}, \'bus_stop_1\': {\'home\': 2.43, \'bus_stop_2\': 3.58, \'market\': 8.06}, \'restaurant\': {\'home\': 1.84, \'bus_stop_3\': 3.47, \'market\': 11.69, \'bus_stop_1\': 2.89}, \'park\': {\'bus_stop_2\': 10.65, \'bus_stop_1\': 1.5}, \'home\': {\'bus_stop_1\': 1.62, \'park\': 11.12, \'market\': 14.19, \'restaurant\': 6.37}, \'market\': {\'bus_stop_2\': 8.3, \'bus_stop_1\': 11.85}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:park\', \'bus_stop_3:market\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 9.66}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 0.88}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'restaurant'),
+		('pay_cab_driver', 'me', 4.69)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'restaurant\': 9.42}, \'bus_stop_3\': {\'home\': 1.31, \'park\': 13.71, \'bus_stop_2\': 3.63, \'bus_stop_1\': 2.38}, \'bus_stop_1\': {\'bus_stop_2\': 2.36}, \'restaurant\': {\'park\': 4.94, \'bus_stop_3\': 7.02}, \'park\': {\'home\': 6.26, \'bus_stop_1\': 14.44}, \'home\': {\'bus_stop_2\': 8.21, \'bus_stop_3\': 10.7}, \'market\': {\'bus_stop_1\': 5.98, \'park\': 12.4, \'bus_stop_3\': 1.63, \'restaurant\': 0.02}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:market\', \'bus_stop_3:restaurant\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 6.96}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 0.77}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('walk', 'me', 'market', 'restaurant')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'home\': 1.08, \'market\': 8.28}, \'bus_stop_3\': {\'home\': 10.64, \'park\': 13.73, \'market\': 14.61, \'restaurant\': 3.18}, \'bus_stop_1\': {\'bus_stop_3\': 11.52, \'restaurant\': 10.11}, \'restaurant\': {\'home\': 3.61, \'bus_stop_2\': 1.98, \'market\': 1.11}, \'park\': {}, \'home\': {\'bus_stop_3\': 0.0, \'restaurant\': 9.59}, \'market\': {\'home\': 12.66, \'park\': 6.07, \'bus_stop_3\': 6.81, \'bus_stop_1\': 1.63}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_1:park\', \'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 16.75}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 4.89}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'park'),
+		('pay_cab_driver', 'me', 4.54)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'bus_stop_1\': 3.61}, \'bus_stop_3\': {\'restaurant\': 5.44}, \'bus_stop_1\': {}, \'restaurant\': {\'park\': 10.58, \'bus_stop_3\': 11.58}, \'park\': {\'market\': 4.23, \'restaurant\': 1.32}, \'home\': {\'bus_stop_2\': 4.65, \'market\': 0.83, \'restaurant\': 5.15}, \'market\': {\'home\': 12.71, \'bus_stop_2\': 14.06, \'bus_stop_3\': 1.45}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:park\', \'bus_stop_1:market\', \'bus_stop_2:bus_stop_1\']',
+			'cash={\'me\': 16.67}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 4.26}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'home'),
+		('pay_cab_driver', 'me', 7.86)
+	]),
+	([
+		([
+			'loc={\'me\': \'home\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'park\': 2.12}, \'bus_stop_3\': {\'home\': 11.79, \'market\': 8.74}, \'bus_stop_1\': {\'home\': 12.86, \'market\': 12.71, \'restaurant\': 14.01}, \'restaurant\': {\'home\': 6.16, \'park\': 11.98}, \'park\': {\'bus_stop_3\': 11.52}, \'home\': {\'park\': 6.64, \'bus_stop_3\': 0.35}, \'market\': {\'bus_stop_1\': 5.63, \'bus_stop_2\': 4.04, \'restaurant\': 1.84}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:market\', \'bus_stop_1:bus_stop_1\', \'bus_stop_2:home\', \'bus_stop_2:market\', \'bus_stop_2:bus_stop_1\', \'bus_stop_3:bus_stop_1\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 16.36}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 11.22}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'home'),
+		('ride_taxi', 'me', 'home', 'park'),
+		('pay_cab_driver', 'me', 4.82)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'park\': 5.54, \'bus_stop_1\': 8.35}, \'bus_stop_3\': {\'bus_stop_2\': 6.98, \'park\': 6.52, \'market\': 8.42}, \'bus_stop_1\': {\'bus_stop_2\': 7.28}, \'restaurant\': {\'bus_stop_1\': 6.98}, \'park\': {}, \'home\': {}, \'market\': {\'home\': 2.52, \'bus_stop_3\': 1.35}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_1:park\', \'bus_stop_1:market\', \'bus_stop_1:bus_stop_3\', \'bus_stop_2:market\']',
+			'cash={\'me\': 18.36}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 3.27}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'home'),
+		('pay_cab_driver', 'me', 2.76)
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'home\': 5.22, \'bus_stop_3\': 12.69, \'market\': 6.23}, \'bus_stop_3\': {\'park\': 5.54, \'restaurant\': 8.58}, \'bus_stop_1\': {\'bus_stop_3\': 5.9}, \'restaurant\': {\'park\': 7.54, \'bus_stop_3\': 1.84, \'market\': 11.47}, \'park\': {\'home\': 1.33}, \'home\': {}, \'market\': {\'home\': 13.24, \'park\': 1.02}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_1:bus_stop_2\', \'bus_stop_2:bus_stop_1\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:market\']',
+			'cash={\'me\': 16.18}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 1.77}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'restaurant'),
+		('ride_taxi', 'me', 'restaurant', 'market'),
+		('pay_cab_driver', 'me', 7.24)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_3\'}',
+			'dist={\'bus_stop_2\': {\'park\': 8.15, \'bus_stop_3\': 11.73, \'market\': 6.77, \'bus_stop_1\': 2.82}, \'bus_stop_3\': {\'home\': 5.55, \'restaurant\': 1.51}, \'bus_stop_1\': {\'home\': 3.07, \'bus_stop_3\': 7.35}, \'restaurant\': {\'park\': 1.08}, \'park\': {\'bus_stop_2\': 8.14, \'bus_stop_1\': 3.24}, \'home\': {\'market\': 7.59}, \'market\': {\'home\': 14.1, \'park\': 2.0, \'bus_stop_2\': 1.97, \'bus_stop_1\': 2.28}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_2:market\', \'bus_stop_2:bus_stop_3\']',
+			'cash={\'me\': 16.36}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 10.2}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('walk', 'me', 'market', 'park')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'market\': 12.85}, \'bus_stop_3\': {\'bus_stop_2\': 1.19, \'restaurant\': 6.24}, \'bus_stop_1\': {\'bus_stop_2\': 14.99, \'park\': 4.04, \'market\': 2.9}, \'restaurant\': {\'home\': 11.36, \'park\': 9.49, \'market\': 6.65}, \'park\': {\'bus_stop_1\': 1.25, \'restaurant\': 6.49}, \'home\': {\'market\': 8.51, \'bus_stop_1\': 2.0}, \'market\': {\'bus_stop_1\': 8.54, \'bus_stop_3\': 1.8, \'restaurant\': 6.51}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:market\', \'bus_stop_2:bus_stop_2\', \'bus_stop_3:restaurant\', \'bus_stop_3:bus_stop_3\']',
+			'cash={\'me\': 19.89}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 13.33}',
+			'loc={\'me\': \'restaurant\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'restaurant'),
+		('pay_cab_driver', 'me', 4.75)
+	]),
+	([
+		([
+			'loc={\'me\': \'park\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'market\': 6.76}, \'bus_stop_3\': {\'bus_stop_1\': 8.48, \'bus_stop_2\': 10.58, \'market\': 8.17, \'restaurant\': 3.32}, \'bus_stop_1\': {\'home\': 0.51, \'park\': 0.3, \'bus_stop_2\': 11.67, \'bus_stop_3\': 6.73}, \'restaurant\': {\'bus_stop_2\': 0.1, \'bus_stop_3\': 12.28}, \'park\': {\'home\': 10.8, \'bus_stop_3\': 1.7, \'market\': 12.61, \'restaurant\': 8.52}, \'home\': {\'park\': 10.49, \'bus_stop_3\': 4.05, \'bus_stop_1\': 6.19}, \'market\': {\'bus_stop_2\': 3.98, \'bus_stop_3\': 15.0, \'restaurant\': 12.85}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:restaurant\', \'bus_stop_2:home\', \'bus_stop_2:restaurant\', \'bus_stop_2:market\', \'bus_stop_3:bus_stop_2\']',
+			'cash={\'me\': 16.01}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 6.47}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'park'),
+		('ride_taxi', 'me', 'park', 'home'),
+		('pay_cab_driver', 'me', 6.9)
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {}, \'bus_stop_1\': {\'bus_stop_2\': 13.57}, \'restaurant\': {\'market\': 0.86, \'bus_stop_1\': 0.75}, \'park\': {\'market\': 11.6}, \'home\': {\'park\': 8.45, \'bus_stop_3\': 1.66, \'market\': 10.5}, \'market\': {\'bus_stop_2\': 7.58, \'restaurant\': 2.52}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_2:park\', \'bus_stop_3:restaurant\']',
+			'cash={\'me\': 0.23}',
+			'nearest_bus_stop={\'me\': \'bus_stop_1\'}'
+		]),
+		([
+			'cash={\'me\': 2.26}',
+			'loc={\'me\': \'market\'}'
+		])
+	],
+	[
+		('walk', 'me', 'restaurant', 'market')
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {\'home\': 14.65}, \'bus_stop_3\': {\'park\': 3.8}, \'bus_stop_1\': {\'park\': 5.79}, \'restaurant\': {\'park\': 1.4, \'bus_stop_3\': 1.18, \'market\': 6.32, \'bus_stop_1\': 0.05}, \'park\': {\'market\': 13.85}, \'home\': {\'bus_stop_2\': 11.34, \'bus_stop_3\': 10.32, \'bus_stop_1\': 10.33}, \'market\': {\'home\': 5.7, \'bus_stop_3\': 0.38}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:bus_stop_1\']',
+			'cash={\'me\': 14.83}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 4.76}',
+			'loc={\'me\': \'home\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'home'),
+		('pay_cab_driver', 'me', 4.35)
+	]),
+	([
+		([
+			'loc={\'me\': \'restaurant\', \'bus\': \'bus_stop_1\'}',
+			'dist={\'bus_stop_2\': {}, \'bus_stop_3\': {}, \'bus_stop_1\': {\'restaurant\': 9.37}, \'restaurant\': {\'bus_stop_2\': 0.56, \'park\': 13.51, \'bus_stop_3\': 4.76}, \'park\': {\'home\': 1.24}, \'home\': {\'bus_stop_2\': 2.67, \'restaurant\': 14.11}, \'market\': {\'bus_stop_2\': 12.97, \'restaurant\': 0.15}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_1:home\', \'bus_stop_1:restaurant\', \'bus_stop_2:bus_stop_1\', \'bus_stop_3:home\']',
+			'cash={\'me\': 15.52}',
+			'nearest_bus_stop={\'me\': \'bus_stop_2\'}'
+		]),
+		([
+			'cash={\'me\': 6.71}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'restaurant'),
+		('ride_taxi', 'me', 'restaurant', 'park'),
+		('pay_cab_driver', 'me', 8.25)
+	]),
+	([
+		([
+			'loc={\'me\': \'market\', \'bus\': \'bus_stop_2\'}',
+			'dist={\'bus_stop_2\': {\'home\': 12.74, \'bus_stop_3\': 14.28, \'market\': 13.6, \'restaurant\': 2.7}, \'bus_stop_3\': {\'bus_stop_2\': 1.71, \'bus_stop_1\': 8.92}, \'bus_stop_1\': {\'bus_stop_2\': 4.55, \'park\': 0.61, \'bus_stop_3\': 7.33}, \'restaurant\': {\'park\': 0.03, \'bus_stop_3\': 12.55}, \'park\': {\'home\': 4.04, \'bus_stop_3\': 11.98}, \'home\': {\'restaurant\': 4.89}, \'market\': {\'bus_stop_2\': 3.16, \'park\': 2.7, \'bus_stop_3\': 1.53}}',
+			'target=\'me\'',
+			'bus_route=[\'bus_stop_2:market\', \'bus_stop_2:bus_stop_3\', \'bus_stop_3:restaurant\', \'bus_stop_3:bus_stop_1\']',
+			'cash={\'me\': 15.85}',
+			'nearest_bus_stop={\'me\': \'bus_stop_3\'}'
+		]),
+		([
+			'cash={\'me\': 4.74}',
+			'loc={\'me\': \'park\'}'
+		])
+	],
+	[
+		('call_taxi', 'me', 'market'),
+		('ride_taxi', 'me', 'market', 'park'),
+		('pay_cab_driver', 'me', 2.85)
+	])
+]
